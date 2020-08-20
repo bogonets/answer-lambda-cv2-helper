@@ -10,7 +10,7 @@ def on_run(roi):
     x_list = roi[::, 0::2]
     y_list = roi[::, 1::2]
 
-    return {"result": np.array([np.min(x_list), np.max(x_list), np.min(y_list), np.max(y_list)])}
+    return {"result": np.array([np.min(x_list), np.min(y_list), np.max(x_list), np.max(y_list)])}
 
 
 if __name__ == '__main__':
