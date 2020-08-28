@@ -4,6 +4,8 @@ import numpy as np
 
 
 def on_run(roi):
+    if not roi.shape:
+        return {'result': None}
     if roi.size < 4:
         raise ValueError("roi length should be greater than 4.")
 
